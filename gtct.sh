@@ -18,6 +18,7 @@ export GUM_SPIN_SPINNER_FOREGROUND="#2635ff"
 # Area Variables
 sawtown=false
 foundbrokentreehouse=false # tree house ladder broken
+knowstobreakintotown=false
 canexamineshackmore=false
 cesmsymbol=" "
 
@@ -108,8 +109,31 @@ p1left() {
     clear
     
     if [ "$sawtown" = false ]; then
+        sawtown=true
         echo "Keegan: Huh, there is a town here. Maybe the guards will let me enter."
+        pause
     fi
+
+    clear
+    echo
+    echo "[]   :::::"
+    echo "[]  :::::::"
+    echo "[]  [][=]"
+    echo "[]    [E]  "
+    echo "[]-------------"
+    echo "  G    K      >"
+    echo "[]-------------"
+    echo "[]             "
+    echo ""
+
+    input=$(gum choose "Enter Town" "Move Right" "Talk to Guard" "Examine Tree" "Inventory")
+
+    case $input in
+        "Enter Town")
+            echo "Keegan: I would but there is a guard in the way, maybe I should talk to him."
+            pause
+            ;;
+    esac
     done
 }
 
