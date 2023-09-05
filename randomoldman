@@ -1,0 +1,5 @@
+#!/bin/bash
+
+randomnumber=$(( RANDOM % 5 + 1 ))
+
+echo "$randomnumber"
