@@ -7,6 +7,14 @@
 > Will they make it out? Play and find out.
 
 
+# Getting Started
+
+
+## Installation
+
+It is recommended to [install the latest version of the game](https://github.com/TheKamboy/gt-computer-trouble/releases/latest).
+
+
 # New Name
 
 Keegan&rsquo;s Game has now been renamed to Ghost Team, due to request from my brother.
