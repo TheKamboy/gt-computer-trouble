@@ -1,14 +1,13 @@
-
-# Table of Contents
-
-1.  [test](#org4c52c64)
-
 ![img](https://raw.githubusercontent.com/TheKamboy/gt-computer-trouble/master/assets/img/gtctpicture.png)
 
+> Keegan and his brother were playing a game, when they were called to fix a issue with the server room.
+> They fought over who fixes it and accidentally breaks the terminal in the server room.
+> A portal emerges and sucks them both in.
+> 
+> Will they make it out? Play and find out.
 
-<a id="org4c52c64"></a>
 
-# test
+# New Name
 
-ffjjgf
+Keegan&rsquo;s Game has now been renamed to Ghost Team, due to request from my brother.
 
