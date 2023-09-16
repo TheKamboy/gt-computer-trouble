@@ -12,7 +12,7 @@
 
 ## Installation
 
-> ⚠ There are no releases yet so links leading to releases may not have anything in them.
+> 🔨 There are no releases yet so links leading to releases may not have anything in them.
 
 It is recommended to [install the latest version of the game](https://github.com/TheKamboy/gt-computer-trouble/releases/latest).
 
