@@ -1,5 +1,6 @@
 #+TITLE: Ghost Team: Computer Trouble
 #+AUTHOR: TheKamboy
 #+DATE:<2023-09-16 Sat>
+#+OPTIONS: toc:nil
 
 [[https://raw.githubusercontent.com/TheKamboy/gt-computer-trouble/master/assets/img/gtctpicture.png]]
