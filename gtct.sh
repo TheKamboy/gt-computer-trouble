@@ -114,6 +114,11 @@ pause() {
     ./pausefunction
 }
 
+# 6
+insidetreehouse() {
+    clear
+}
+
 # 5
 p1left() {
     while :
@@ -201,6 +206,7 @@ p1left() {
             introm3
             ;;
         "movetree")
+            insidetreehouse
             ;;
     esac
 }
