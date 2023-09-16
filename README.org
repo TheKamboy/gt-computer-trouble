@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       5b93cc91-fa54-4b80-8df3-e3d5b57a60ad
+:END:
 #+TITLE: Ghost Team: Computer Trouble
 #+AUTHOR: TheKamboy
 #+DATE:<2023-09-16 Sat>
