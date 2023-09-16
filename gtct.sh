@@ -103,6 +103,7 @@ pause() {
     ./pausefunction
 }
 
+# 5
 p1left() {
     while :
     do
@@ -132,6 +133,9 @@ p1left() {
         "Enter Town")
             echo "Keegan: I would but there is a guard in the way, maybe I should talk to him."
             pause
+            ;;
+        "Inventory")
+            viewinv 5
             ;;
     esac
     done
