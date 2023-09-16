@@ -19,6 +19,9 @@ export GUM_SPIN_SPINNER_FOREGROUND="#2635ff"
 sawtown=false
 foundbrokentreehouse=false # tree house ladder broken
 knowstobreakintotown=false
+talkedtoguard=false
+didbreakintotown=false
+fixedtreehouse=false
 canexamineshackmore=false
 cesmsymbol=" "
 
@@ -83,8 +86,16 @@ viewinv() {
             fi
             ;;
         "Portable⠀Ladder")
-            if [ "$area" = 55959595955 ]; then
-                echo "deddededddeed"
+            if [ "$area" = 5 ]; then
+                if [ "$portableladder" = true ]; then
+                    portableladder=false
+                    fixedtreehouse=true
+                    echo "(Keegan places the ladder near the tree.)"
+                    pause
+                    echo "Keegan: Perfect."
+                else
+                    echo "Keegan: I don't need to use this yet."
+                fi
             else
                 echo "Keegan: I don't need to use this yet."
             fi
@@ -117,10 +128,10 @@ p1left() {
 
     clear
     echo
-    echo "[]   :::::"
-    echo "[]  :::::::"
-    echo "[]  [][=]"
-    echo "[]    [E]  "
+    echo "[]   :::::::"
+    echo "[]  :::::::::"
+    echo "[]  [ ][=]"
+    echo "[]     [E]  "
     echo "[]-------------"
     echo "  G    K      >"
     echo "[]-------------"
@@ -131,14 +142,67 @@ p1left() {
 
     case $input in
         "Enter Town")
-            echo "Keegan: I would but there is a guard in the way, maybe I should talk to him."
+            if [ "$didbreakintotown" = true ]; then
+                echo "Keegan: Best not to talk to him or else he might imprison me."
+                pause
+            else
+                echo "Keegan: I would but there is a guard in the way."
+                pause
+            fi
+
+            ;;
+        "Talk to Guard")
+            if [ "$didbreakintotown" = true ]; then
+                echo "Keegan: Nope, that's not a good idea."
+            elif [ "$talkedtoguard" = false ]; then
+                talkedtoguard=true
+                echo "Keegan: Hello, sir. May I please enter?"
+                pause
+                echo "Guard: Sorry, no one is allowed in. King's orders."
+                pause
+                echo "Keegan: Well, have you seen my brother? He's about this high and...(explains Kameron's looks)"
+                pause
+                echo "Guard: Um, well he entered the town even though I said he can't, so he's in captivity."
+                pause
+                echo "Keegan: ...oh."
+                pause
+                echo "Guard: You're probably like that troublemaker, so shoo!"
+                pause
+                echo "Keegan: Ok! Jeez."
+            else
+                echo "Keegan: He doesn't want me to go into town. Maybe there is another way in."
+            fi
+
             pause
+            ;;
+        "Examine Tree")
+            if [ "$fixedtreehouse" = false ]; then
+                echo "Keegan: It looks like it leads to a tree house. The ladder is broken though."
+                pause
+            else
+                echo "Keegan: Looks like I can enter the tree house."
+                if gum confirm "Would you like to enter the tree house?" ; then
+                    input="movetree"
+                    break
+                fi
+            fi
+            ;;
+        "Move Right")
+            break
             ;;
         "Inventory")
             viewinv 5
             ;;
     esac
     done
+
+    case $input in
+        "Move Right")
+            introm3
+            ;;
+        "movetree")
+            ;;
+    esac
 }
 
 # 4
@@ -190,7 +254,7 @@ p1right() {
             elif [ "$canexamineshackmore" = true ]; then
             if [ "$gotportladder" = false ]; then
             canexamineshackmore=false
-            cesmsymbol=""
+            cesmsymbol=" "
             portableladder=true
             gotportladder=true
             echo "Keegan: Looks like there is a portable ladder on the side of this shack. I will take that."
