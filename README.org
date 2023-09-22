@@ -17,16 +17,20 @@ Will they make it out? Play and find out.
 ** Requirements
 *** Linux or Mac (untested)
 If your Linux Distro supports [[id:c86374a4-c73c-46c0-a53e-95465328c6b9][Gum]], then you are good.
+
+Mac is untested but I think it might work since this game is just an sh script.
 *** Gum
 :PROPERTIES:
 :ID:        c86374a4-c73c-46c0-a53e-95465328c6b9
 :END:
-testing org links
-[[./README.md][a]]
+Gum is a CLI for /glamorous shell scripts/. I use it for this game because it has a more appealing UI, and it makes game development quicker.
+
+[[https://github.com/charmbracelet/gum][Get Gum here.]]
+
 
 ** Installation
 #+begin_quote
-🔨 There are no releases yet so links leading to releases may not have anything in them.
+⚠ There are no releases yet so links leading to releases may not have anything in them.
 #+end_quote
 It is recommended to [[https://github.com/TheKamboy/gt-computer-trouble/releases/latest][install the latest version of the game]].
 
