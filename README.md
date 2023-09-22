@@ -15,11 +15,12 @@
 
 ### Linux or Mac (untested)
 
-1.  Linux in Windows
+If your Linux Distro supports [Gum](#org035a23c), then you are good.
 
-    You can use **wsl** to run a Linux Virtual Machine in Windows.
-    
-    [Here&rsquo;s Microsoft&rsquo;s guide to setting it up.](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+### Gum
+
+hold
 
 
 ## Installation
