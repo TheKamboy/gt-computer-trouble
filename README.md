@@ -16,12 +16,12 @@
 
 ### Linux or Mac (untested)
 
-If your Linux Distro supports [Gum](#org19ef754), then you are good.
+If your Linux Distro supports [Gum](#orgb67c31c), then you are good.
 
 Mac is untested but I think it might work since this game is just an sh script.
 
 
-<a id="org19ef754"></a>
+<a id="orgb67c31c"></a>
 
 ### Gum
 
@@ -32,7 +32,7 @@ Gum is a CLI for *glamorous shell scripts*. I use it for this game because it ha
 
 ## Installation
 
-> 🔨 There are no releases yet so links leading to releases may not have anything in them.
+> ⚠️ There are no releases yet so links leading to releases may not have anything in them.
 
 It is recommended to [install the latest version of the game](https://github.com/TheKamboy/gt-computer-trouble/releases/latest).
 

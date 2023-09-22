@@ -17,7 +17,6 @@ export GUM_SPIN_SPINNER_FOREGROUND="#2635ff"
 
 # Area Variables
 sawtown=false
-foundbrokentreehouse=false # tree house ladder broken
 knowstobreakintotown=false
 talkedtoguard=false
 didbreakintotown=false
@@ -27,11 +26,12 @@ cesmsymbol=" "
 
 # Inventory Variables
 currency=20
-canofbeans=false
+canofbeans=false # I don't know why, but the can of beans will be the running joke of these games
 portableladder=false
 gotportladder=false # "got" represents if the item was picked up by the player so you can't pick it up again
 gotcanofbeans=false
 
+# The Inventory System (I wish I didn't have to use fake spaces for the inventory items)
 viewinv() {
     area=$1
     gumoptions=""
@@ -108,6 +108,7 @@ viewinv() {
     pause
 }
 
+# Pauses the Game
 pause() {
     echo ""
     echo "Press any key to continue..."
@@ -116,7 +117,37 @@ pause() {
 
 # 6
 insidetreehouse() {
+    while :
+    do
     clear
+    echo
+    echo "[]   :::::::"
+    echo "[]  :::::::::"
+    echo "[]  [K][=]"
+    echo "[]     [v]  "
+    echo "[]-------------"
+    echo "  G            "
+    echo "[]-------------"
+    echo "[]             "
+    echo ""
+
+    input=$(gum choose "Jump into Town" "Exit Tree House")
+
+    case $input in
+        "Jump into Town")
+            break
+            ;;
+        "Exit Tree House")
+            break
+            ;;
+    esac
+    done
+
+    case $input in
+        "Exit Tree House")
+            p1left
+            ;;
+    esac
 }
 
 # 5
@@ -138,7 +169,7 @@ p1left() {
     echo "[]  [ ][=]"
     echo "[]     [E]  "
     echo "[]-------------"
-    echo "  G    K      >"
+    echo "  G     K     >"
     echo "[]-------------"
     echo "[]             "
     echo ""
@@ -519,9 +550,8 @@ game_intro() {
 
 clear
 gum style --padding "1 5" --border double --border-foreground "#2635ff" "Ghost Team: Computer Trouble"
-gum confirm "Do you want to play?"
 
-if [ "$?" = 0 ]; then
+if gum confirm "Do you want to play?"; then
     game_intro
 else
     echo ":("
