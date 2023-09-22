@@ -13,9 +13,7 @@
 ## Requirements
 
 
-### Linux
-
-I don&rsquo;t have a Mac but you might be fine if you play using a Mac.
+### Linux or Mac (untested)
 
 1.  Linux in Windows
 
