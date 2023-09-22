@@ -1,6 +1,6 @@
 ![img](https://raw.githubusercontent.com/TheKamboy/gt-computer-trouble/master/assets/img/gtctpicture.png)
 
-> Keegan and his brother were playing a game, when they were called to fix a issue with the server room.
+> Keegan and his brother, Kameron, were playing a game, when they were called to fix a issue with the server room.
 > They fought over who fixes it and accidentally breaks the terminal in the server room.
 > A portal emerges and sucks them both in.
 > 
@@ -15,14 +15,18 @@
 
 ### Linux or Mac (untested)
 
-If your Linux Distro supports [Gum](#orgff0ee3b), then you are good.
+If your Linux Distro supports [Gum](#org8b94ff9), then you are good.
+
+Mac is untested but I think it might work since this game is just an sh script.
 
 
-<a id="orgff0ee3b"></a>
+<a id="org8b94ff9"></a>
 
 ### Gum
 
-hold
+Gum is a CLI for *glamorous shell scripts*. I use it for this game because it has a more appealing UI, and it makes game development quicker.
+
+[Get Gum here.](https://github.com/charmbracelet/gum)
 
 
 ## Installation
@@ -32,6 +36,11 @@ hold
 It is recommended to [install the latest version of the game](https://github.com/TheKamboy/gt-computer-trouble/releases/latest).
 
 Unpack the .zip (or .tar.gz depending on what you installed)
+
+Now you have two options.
+
+1.  Set `gtct.sh` to be executable and run it like a program in the terminal `./gtct.sh`.
+2.  Run it in the terminal like this `sh ./gtct.sh`.
 
 
 # New Name

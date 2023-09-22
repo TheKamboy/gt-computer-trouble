@@ -6,7 +6,7 @@
 [[https://raw.githubusercontent.com/TheKamboy/gt-computer-trouble/master/assets/img/gtctpicture.png]]
 
 #+begin_quote
-Keegan and his brother were playing a game, when they were called to fix a issue with the server room.
+Keegan and his brother, Kameron, were playing a game, when they were called to fix a issue with the server room.
 They fought over who fixes it and accidentally breaks the terminal in the server room.
 A portal emerges and sucks them both in.
 
@@ -30,11 +30,16 @@ Gum is a CLI for /glamorous shell scripts/. I use it for this game because it ha
 
 ** Installation
 #+begin_quote
-⚠ There are no releases yet so links leading to releases may not have anything in them.
+🔨 There are no releases yet so links leading to releases may not have anything in them.
 #+end_quote
 It is recommended to [[https://github.com/TheKamboy/gt-computer-trouble/releases/latest][install the latest version of the game]].
 
 Unpack the .zip (or .tar.gz depending on what you installed)
+
+Now you have two options.
+
+1. Set ~gtct.sh~ to be executable and run it like a program in the terminal ~./gtct.sh~.
+1. Run it in the terminal like this ~sh ./gtct.sh~.
 
 * New Name
 Keegan's Game has now been renamed to Ghost Team, due to request from my brother.
