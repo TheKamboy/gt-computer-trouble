@@ -21,7 +21,8 @@ If your Linux Distro supports [[id:c86374a4-c73c-46c0-a53e-95465328c6b9][Gum]], 
 :PROPERTIES:
 :ID:        c86374a4-c73c-46c0-a53e-95465328c6b9
 :END:
-hold
+testing org links
+[[./README.md][a]]
 
 ** Installation
 #+begin_quote
