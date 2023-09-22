@@ -16,8 +16,11 @@ Will they make it out? Play and find out.
 * Getting Started
 ** Requirements
 *** Linux or Mac (untested)
-If your Linux Distro supports [[*Gum][Gum]], then you are good.
+If your Linux Distro supports [[id:c86374a4-c73c-46c0-a53e-95465328c6b9][Gum]], then you are good.
 *** Gum
+:PROPERTIES:
+:ID:        c86374a4-c73c-46c0-a53e-95465328c6b9
+:END:
 hold
 
 ** Installation
