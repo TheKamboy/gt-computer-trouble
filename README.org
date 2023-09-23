@@ -40,5 +40,12 @@ Now you have two options.
 1. Set ~gtct.sh~ to be executable and run it like a program in the terminal ~./gtct.sh~.
 1. Run it in the terminal like this ~sh ./gtct.sh~.
 
+** Other Ways to Play
+#+begin_quote
+💣 The Replit version is VERY buggy, so it's recommended to play with the other options instead.
+#+end_quote
+
+[[https://replit.com/@Kamboy123/gt-computer-trouble?v=1][You can play on Replit!]]
+
 * New Name
 Keegan's Game has now been renamed to Ghost Team, due to request from my brother.

@@ -16,12 +16,12 @@
 
 ### Linux or Mac (untested)
 
-If your Linux Distro supports [Gum](#orgb67c31c), then you are good.
+If your Linux Distro supports [Gum](#orgb30af75), then you are good.
 
 Mac is untested but I think it might work since this game is just an sh script.
 
 
-<a id="orgb67c31c"></a>
+<a id="orgb30af75"></a>
 
 ### Gum
 
@@ -32,7 +32,7 @@ Gum is a CLI for *glamorous shell scripts*. I use it for this game because it ha
 
 ## Installation
 
-> ⚠️ There are no releases yet so links leading to releases may not have anything in them.
+> 🔨 There are no releases yet so links leading to releases may not have anything in them.
 
 It is recommended to [install the latest version of the game](https://github.com/TheKamboy/gt-computer-trouble/releases/latest).
 
@@ -42,6 +42,13 @@ Now you have two options.
 
 1.  Set `gtct.sh` to be executable and run it like a program in the terminal `./gtct.sh`.
 2.  Run it in the terminal like this `sh ./gtct.sh`.
+
+
+## Other Ways to Play
+
+> 💣 The Replit version is VERY buggy, so it&rsquo;s recommended to play with the other options instead.
+
+[You can play on Replit!](https://replit.com/@Kamboy123/gt-computer-trouble?v=1)
 
 
 # New Name
