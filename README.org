@@ -29,7 +29,7 @@ Gum is a CLI for /glamorous shell scripts/. I use it for this game because it ha
 
 ** Installation
 #+begin_quote
-⚠️ There are no releases yet so links leading to releases may not have anything in them.
+🔨 There are no releases yet so links leading to releases may not have anything in them.
 #+end_quote
 It is recommended to [[https://github.com/TheKamboy/gt-computer-trouble/releases/latest][install the latest version of the game]].
 

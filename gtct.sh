@@ -115,6 +115,11 @@ pause() {
     ./pausefunction
 }
 
+# Town Cutscene
+jumpingintotowncutscene() {
+    clear
+}
+
 # 6
 insidetreehouse() {
     while :
@@ -147,6 +152,8 @@ insidetreehouse() {
         "Exit Tree House")
             p1left
             ;;
+        "Jump into Town")
+            ;;
     esac
 }
 
@@ -155,7 +162,7 @@ p1left() {
     while :
     do
     clear
-    
+
     if [ "$sawtown" = false ]; then
         sawtown=true
         echo "Keegan: Huh, there is a town here. Maybe the guards will let me enter."
