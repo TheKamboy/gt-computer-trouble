@@ -35,10 +35,12 @@ It is recommended to [[https://github.com/TheKamboy/gt-computer-trouble/releases
 
 Unpack the .zip (or .tar.gz depending on what you installed)
 
-Now you have two options.
+** How to set up the download for playing
+- Set ~gtct.sh~ to be executable and run it like a program in the terminal ~./gtct.sh~.
 
-1. Set ~gtct.sh~ to be executable and run it like a program in the terminal ~./gtct.sh~.
-1. Run it in the terminal like this ~sh ./gtct.sh~.
+or
+
+- Run it in the terminal like this ~sh ./gtct.sh~.
 
 ** Other Ways to Play
 #+begin_quote

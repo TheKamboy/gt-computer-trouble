@@ -16,12 +16,12 @@
 
 ### Linux or Mac (untested)
 
-If your Linux Distro supports [Gum](#orgb30af75), then you are good.
+If your Linux Distro supports [Gum](#orgfc12197), then you are good.
 
 Mac is untested but I think it might work since this game is just an sh script.
 
 
-<a id="orgb30af75"></a>
+<a id="orgfc12197"></a>
 
 ### Gum
 
@@ -38,10 +38,14 @@ It is recommended to [install the latest version of the game](https://github.com
 
 Unpack the .zip (or .tar.gz depending on what you installed)
 
-Now you have two options.
 
-1.  Set `gtct.sh` to be executable and run it like a program in the terminal `./gtct.sh`.
-2.  Run it in the terminal like this `sh ./gtct.sh`.
+## How to set up the download for playing
+
+-   Set `gtct.sh` to be executable and run it like a program in the terminal `./gtct.sh`.
+
+or
+
+-   Run it in the terminal like this `sh ./gtct.sh`.
 
 
 ## Other Ways to Play
