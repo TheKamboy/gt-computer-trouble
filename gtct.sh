@@ -118,6 +118,10 @@ pause() {
 # Town Cutscene
 jumpingintotowncutscene() {
     clear
+    echo "*Keegan leaped into the air, over the wall, into a stack of hay.*"
+    pause
+    echo "Keegan: Well, that was a somewhat easy way in. Now it's time to find Kameron."
+    pause
 }
 
 # 6
@@ -153,6 +157,7 @@ insidetreehouse() {
             p1left
             ;;
         "Jump into Town")
+            jumpingintotowncutscene
             ;;
     esac
 }
