@@ -1,3 +1,12 @@
+<!--toc:start-->
+- [Welcome](#welcome)
+- [Objective 1](#objective-1)
+  - [The Camp Site](#the-camp-site)
+  - [The Shack](#the-shack)
+  - [The Town Entrance](#the-town-entrance)
+  - [How to Enter the Town](#how-to-enter-the-town)
+<!--toc:end-->
+
 # Welcome
 This is a walkthrough I made just in case you don't know what to do.
 
@@ -18,4 +27,4 @@ There is a town, but a guard won't let you enter because your brother tried to g
 ## How to Enter the Town
 Go to the shack and talk to the old man. Once that's done, examine the shack to take the ladder.
 
-Now, go to the town enterance and open your inventory. Select the ladder to place it on the tree. Examine the tree to enter it, then jump out the tree to enter the town.
+Now, go to the town entrance and open your inventory. Select the ladder to place it on the tree. Examine the tree to enter it, then jump out the tree to enter the town.
