@@ -16,12 +16,10 @@
 
 ### Linux or Mac (untested)
 
-If your Linux Distro supports [Gum](#orgfc12197), then you are good.
+If your Linux Distro supports [Gum](#gum), then you are good.
 
 Mac is untested but I think it might work since this game is just an sh script.
 
-
-<a id="orgfc12197"></a>
 
 ### Gum
 
@@ -50,12 +48,11 @@ or
 
 ## Other Ways to Play
 
-> 💣 The Replit version is VERY buggy, so it&rsquo;s recommended to play with the other options instead.
+> 💣 The Replit version isn't very buggy, but it's still recommended to play with other options instead.
 
 [You can play on Replit!](https://replit.com/@Kamboy123/gt-computer-trouble?v=1)
 
 
 # New Name
 
-Keegan&rsquo;s Game has now been renamed to Ghost Team, due to request from my brother.
-
+Keegan's Game has now been renamed to Ghost Team, due to request from my brother.
