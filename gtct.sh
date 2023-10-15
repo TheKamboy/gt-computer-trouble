@@ -115,13 +115,56 @@ pause() {
     ./pausefunction
 }
 
+# 7
+town1() {
+    while :
+    do
+        clear
+        echo "~~|   |~~"
+        echo "~~| ^ |~~"
+        echo "|--   --|"
+        echo "|       -------"
+        echo "|   K    >     "
+        echo "|       -------"
+        echo "|   v   |"
+        echo "#########"
+        echo ""
+
+        input=$(gum choose "Move Up" "Move Down" "Move Right" "Examine Area" "Inventory")
+    
+        case $input in
+            "Move Up")
+                break
+                ;;
+            "Move Right")
+                echo "Keegan: There's no point in looking for a needle in that stack of hay."
+                pause
+                ;;
+            "Move Down")
+                echo "Keegan: If I move through there, the guard will get me. It doesn't seem like he wants to turn towards the enterance, so I'll be fine here."
+                pause
+                ;;
+            "Examine Area")
+                echo "Keegan: Well, it's a split path."
+                pause
+                ;;
+            "Inventory")
+                viewinv 7
+                ;;
+        esac
+        done
+}
+
 # Town Cutscene
 jumpingintotowncutscene() {
     clear
     echo "*Keegan leaped into the air, over the wall, into a stack of hay.*"
     pause
+    echo "*Keegan walks to the left, and finds a bridge leading into the town.*"
+    pause
     echo "Keegan: Well, that was a somewhat easy way in. Now it's time to find Kameron."
     pause
+    town1
 }
 
 # 6

@@ -1,4 +1,8 @@
+# Table of Contents
+
+
 <!--toc:start-->
+- [Table of Contents](#table-of-contents)
 - [Welcome](#welcome)
 - [Objective 1](#objective-1)
   - [The Camp Site](#the-camp-site)
