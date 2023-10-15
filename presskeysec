@@ -1,0 +1,19 @@
+#!/bin/bash
+
+time=$1
+
+if [ "$1" = "" ]; then
+  echo "NO TIME GIVEN"
+  exit 1
+fi
+
+read -r -s -n 1 -t $time key
+
+case $key in
+  "")
+    exit 1
+    ;;
+  *)
+    exit 0
+    ;;
+esac
