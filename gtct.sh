@@ -47,26 +47,30 @@ viewinv() {
 		gumoptions="$gumoptions Portable⠀Ladder"
 	fi
 
-	echo "What would you like to use?"
-	echo ""
-	input=$(gum choose $gumoptions)
+	if [ "$gumoptions" != "" ]; then
+		echo "What would you like to use?"
+		echo ""
+		input=$(gum choose $gumoptions)
 
-	case $input in
-	"\$$currency")
-		if [ "$area" = 4 ]; then
-			if [ "$talkedtohomelessguy" = true ]; then
-				if [ "$gavemoneytohomelessguy" = false ]; then
-					gum confirm "Are you sure you want to give \$10 to the Old Man?"
+		case $input in
+		"\$$currency")
+			if [ "$area" = 4 ]; then
+				if [ "$talkedtohomelessguy" = true ]; then
+					if [ "$gavemoneytohomelessguy" = false ]; then
+						gum confirm "Are you sure you want to give \$10 to the Old Man?"
 
-					if [ "$?" = 1 ]; then
-						echo "Keegan: I guess charity might not be a good idea right now."
+						if [ "$?" = 1 ]; then
+							echo "Keegan: I guess charity might not be a good idea right now."
+						else
+							currency=$((currency - 10))
+							goodactions=$((goodactions + 1))
+							gavemoneytohomelessguy=true
+							echo "Keegan: Here you go."
+							pause
+							echo "Old Man: Wow! Thank you so much! I'm going to get some food later."
+						fi
 					else
-						currency=$((currency - 10))
-						goodactions=$((goodactions + 1))
-						gavemoneytohomelessguy=true
-						echo "Keegan: Here you go."
-						pause
-						echo "Old Man: Wow! Thank you so much! I'm going to get some food later."
+						echo "Keegan: I don't need to use this yet."
 					fi
 				else
 					echo "Keegan: I don't need to use this yet."
@@ -74,36 +78,36 @@ viewinv() {
 			else
 				echo "Keegan: I don't need to use this yet."
 			fi
-		else
-			echo "Keegan: I don't need to use this yet."
-		fi
-		;;
-	"Can⠀of⠀Beans")
-		if [ "$area" = 43429324934894328934898934289324923 ]; then
-			echo "gjreoijgriokjgri"
-		else
-			echo "Keegan: I don't need to use this yet."
-		fi
-		;;
-	"Portable⠀Ladder")
-		if [ "$area" = 5 ]; then
-			if [ "$portableladder" = true ]; then
-				portableladder=false
-				fixedtreehouse=true
-				echo "(Keegan places the ladder near the tree.)"
-				pause
-				echo "Keegan: Perfect."
+			;;
+		"Can⠀of⠀Beans")
+			if [ "$area" = 43429324934894328934898934289324923 ]; then
+				echo "gjreoijgriokjgri"
 			else
 				echo "Keegan: I don't need to use this yet."
 			fi
-		else
+			;;
+		"Portable⠀Ladder")
+			if [ "$area" = 5 ]; then
+				if [ "$portableladder" = true ]; then
+					portableladder=false
+					fixedtreehouse=true
+					echo "(Keegan places the ladder near the tree.)"
+					pause
+					echo "Keegan: Perfect."
+				else
+					echo "Keegan: I don't need to use this yet."
+				fi
+			else
+				echo "Keegan: I don't need to use this yet."
+			fi
+			;;
+		*)
 			echo "Keegan: I don't need to use this yet."
-		fi
-		;;
-	*)
-		echo "Keegan: I don't need to use this yet."
-		;;
-	esac
+			;;
+		esac
+	else
+		echo "You have no items!"
+	fi
 
 	pause
 }
