@@ -132,6 +132,12 @@ town2() {
 		echo "~~~~~~~| v |~~~~~~~~~~~"
 		echo "~~~~~~~|   |~~~~~~~~~~~"
 		echo ""
+
+		input=$(gum choose "Move Left" "Move Right" "Move Up" "Move Down" "Examine Area" "Inventory")
+
+		case $input in
+		"Move Left") ;;
+		esac
 	done
 }
 
