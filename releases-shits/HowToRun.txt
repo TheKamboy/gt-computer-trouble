@@ -1,0 +1,17 @@
+If you are on Windows, you will need WSL.
+I'm too lazy to explain shit, so search it up.
+
+You will need Gum to run this, and I'm not doing fancy stuff
+to put it in /tmp, so do install it yourself.
+I will do that when I add it.
+Here's link: https://github.com/charmbracelet/gum
+
+Make sure all the scripts are executable in the folder.
+If you want to just run this IN THE FOLDER: chmod +x *
+
+If not just "chmod +x" these files:
+gtct-demo.sh
+pausefunction
+randomoldman
+
+Now, just run "gtct-demo" with this command: "./gtct-demo.sh"

@@ -119,6 +119,15 @@ pause() {
 	./pausefunction
 }
 
+endofdemo() {
+	clear
+	echo "Welp, that's all there is right now."
+	echo ""
+	echo "Come back when I have motivation to work on this more!"
+	pause
+	exit
+}
+
 town2() {
 	while :; do
 		clear
@@ -183,7 +192,7 @@ town1() {
 		esac
 	done
 
-	town2
+	endofdemo
 }
 
 # Town Cutscene
