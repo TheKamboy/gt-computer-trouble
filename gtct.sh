@@ -31,6 +31,17 @@ portableladder=false
 gotportladder=false # "got" represents if the item was picked up by the player so you can't pick it up again
 gotcanofbeans=false
 
+# displays messages as rainbow if lolcat exists
+echotolol() {
+	msg="$1"
+
+	if which lolcat > /dev/null 2>&1 ; then
+		echo "$msg" | lolcat
+	else
+		echo "$msg"
+	fi
+}
+
 # The Inventory System (I wish I didn't have to use fake spaces for the inventory items)
 viewinv() {
 	area=$1
@@ -102,7 +113,7 @@ viewinv() {
 							pause
 							echo "*Guard pulls out his sword and stabs Keegan, killing him.*"
 							pause
-							echo "GAME OVER: Don't be a dumbass with swordsman."
+							echotolol "GAME OVER: Don't be a dumbass with swordsman."
 							pause
 							exit 1
 					esac
@@ -379,7 +390,7 @@ p1right() {
 				pause
 				echo "Keegan: I don't want your money, I was just seeing what was going on."
 				pause
-				echo "Old Man: Well, it would really help if you could give me some money. Like, \$10. I'm really poor after 5 robbers robbed my little house here."
+				echotolol "Old Man: Well, it would really help if you could give me some money. Like, \$10. I'm really poor after 5 robbers robbed my little house here."
 				pause
 				echo "Keegan: Let me think about it."
 				pause
