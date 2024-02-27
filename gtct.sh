@@ -89,11 +89,23 @@ viewinv() {
 		"Portable⠀Ladder")
 			if [ "$area" = 5 ]; then
 				if [ "$portableladder" = true ]; then
-					portableladder=false
-					fixedtreehouse=true
-					echo "(Keegan places the ladder near the tree.)"
-					pause
-					echo "Keegan: Perfect."
+					# portableladder=false
+					# fixedtreehouse=true
+					# echo "(Keegan places the ladder near the tree.)"
+					# pause
+					# echo "Keegan: Perfect."
+					useiton=$(gum choose --header="What would you like to use it on?" "Guard" "Tree")
+
+					case $useiton in
+						"Guard")
+							echo "*Keegan swings the ladder at the guard, but the guard blocks it.*"
+							pause
+							echo "*Guard pulls out his sword and stabs Keegan, killing him.*"
+							pause
+							echo "GAME OVER: Don't be a dumbass with swordsman."
+							pause
+							exit 1
+					esac
 				else
 					echo "Keegan: I don't need to use this yet."
 				fi
