@@ -42,6 +42,16 @@ echotolol() {
 	fi
 }
 
+
+echotololanimate() {
+	msg="$1"
+
+	if which lolcat > /dev/null 2>&1 ; then
+		echo "$msg" | lolcat -a
+	else
+		echo "$msg"
+	fi
+}
 # The Inventory System (I wish I didn't have to use fake spaces for the inventory items)
 viewinv() {
 	area=$1
@@ -113,7 +123,7 @@ viewinv() {
 							pause
 							echo "*Guard pulls out his sword and stabs Keegan, killing him.*"
 							pause
-							echotolol "GAME OVER: Don't be a dumbass with swordsman."
+							echotololanimate "GAME OVER: Don't be a dumbass with swordsman."
 							pause
 							exit 1
 					esac
@@ -402,7 +412,7 @@ p1right() {
 					gotportladder=true
 					echo "Keegan: Looks like there is a portable ladder on the side of this shack. I will take that."
 					echo ""
-					echo "*You got a Portable Ladder!*"
+					echotololanimate "*You got a Portable Ladder!*"
 					pause
 				fi
 			else
@@ -515,7 +525,7 @@ introm2() {
 			false)
 				echo "Keegan: This camp site has been abandoned, but all there is left is a dented can of beans."
 				echo ""
-				echo "*You got a can of beans!*"
+				echotololanimate "*You got a can of beans!*"
 				gotcanofbeans=true
 				canofbeans=true
 				;;
